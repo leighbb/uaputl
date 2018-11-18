@@ -56,9 +56,8 @@ extern struct option cmd_options[];
 void
 print_sys_cfg_ap_mac_address_usage(void)
 {
-    printf("\nUsage : sys_cfg_ap_mac_address [AP_MAC_ADDRESS]\n");
-    printf
-        ("\nIf AP_MAC_ADDRESS is provided, a 'set' is performed, else a 'get' is performed.\n");
+    printf("\nUsage : sys_cfg_ap_mac_address [AP_MAC_ADDRESS]\n"
+           "\nIf AP_MAC_ADDRESS is provided, a 'set' is performed, else a 'get' is performed.\n");
     return;
 }
 
@@ -70,9 +69,8 @@ print_sys_cfg_ap_mac_address_usage(void)
 void
 print_sys_cfg_ssid_usage(void)
 {
-    printf("\nUsage : sys_cfg_ssid [SSID]\n");
-    printf
-        ("\nIf SSID is provided, a 'set' is performed, else a 'get' is performed.\n");
+    printf("\nUsage : sys_cfg_ssid [SSID]\n"
+           "\nIf SSID is provided, a 'set' is performed, else a 'get' is performed.\n");
     return;
 }
 
@@ -85,9 +83,8 @@ print_sys_cfg_ssid_usage(void)
 void
 print_sys_cfg_beacon_period_usage(void)
 {
-    printf("\nUsage : sys_cfg_beacon_period [BEACON_PERIOD]\n");
-    printf
-        ("\nIf BEACON_PERIOD is provided, a 'set' is performed, else a 'get' is performed.\n");
+    printf("\nUsage : sys_cfg_beacon_period [BEACON_PERIOD]\n"
+           "\nIf BEACON_PERIOD is provided, a 'set' is performed, else a 'get' is performed.\n");
     return;
 }
 
@@ -100,9 +97,8 @@ print_sys_cfg_beacon_period_usage(void)
 void
 print_sys_cfg_dtim_period_usage(void)
 {
-    printf("\nUsage : sys_cfg_dtim_period [DTIM_PERIOD]\n");
-    printf
-        ("\nIf DTIM_PERIOD is provided, a 'set' is performed, else a 'get' is performed.\n");
+    printf("\nUsage : sys_cfg_dtim_period [DTIM_PERIOD]\n"
+           "\nIf DTIM_PERIOD is provided, a 'set' is performed, else a 'get' is performed.\n");
     return;
 }
 
@@ -115,11 +111,10 @@ print_sys_cfg_dtim_period_usage(void)
 void
 print_sys_cfg_channel_usage(void)
 {
-    printf("\nUsage : sys_cfg_channel [CHANNEL] [MODE]\n");
-    printf
-        ("\nIf CHANNEL is provided, a 'set' is performed, else a 'get' is performed.");
-    printf("\nIf MODE is provided, 0 for manual channel selection,");
-    printf("\nelse ACS (automatic channel selection) is performed\n");
+    printf("\nUsage : sys_cfg_channel [CHANNEL] [MODE]\n"
+           "\nIf CHANNEL is provided, a 'set' is performed, else a 'get' is performed."
+           "\nIf MODE is provided, 0 for manual channel selection"
+           "\nelse ACS (automatic channel selection) is performed\n");
     return;
 }
 
@@ -132,9 +127,8 @@ print_sys_cfg_channel_usage(void)
 void
 print_sys_cfg_scan_channels_usage(void)
 {
-    printf("\nUsage : sys_cfg_scan_channels [CHANNELS]\n");
-    printf
-        ("\nIf CHANNELS are provided, a 'set' is performed, else a 'get' is performed.\n");
+    printf("\nUsage : sys_cfg_scan_channels [CHANNELS]\n"
+           "\nIf CHANNELS are provided, a 'set' is performed, else a 'get' is performed.\n");
     return;
 }
 
@@ -147,28 +141,21 @@ void
 print_sys_cfg_rates_ext_usage(void)
 {
     printf
-        ("\nUsage : sys_cfg_rates_ext [rates RATES] [mbrate RATE] [urate RATE]\n");
-    printf
-        ("\nIf 'Rate' provided, a 'set' is performed else a 'get' is performed");
-    printf
-        ("\nRATES is provided as a set of data rates, in unit of 500 kilobits");
-    printf("\nA rate with MSB bit is basic rate, i.e 0x82 is basic rate.\n");
-    printf("\nFollowing is the list of supported rates in units of 500 Kbps:");
-    printf("\nDecimal: (2, 4, 11, 22, 12, 18, 24, 36, 48, 72, 96, 108)");
-    printf
-        ("\nHex: (0x02, 0x04, 0x0b, 0x16, 0x0C, 0x12, 0x18, 0x24, 0x30, 0x48, 0x60, 0x6c)");
-    printf
-        ("\nBasic rates: (0x82, 0x84, 0x8b, 0x96, 0x8C, 0x92, 0x98, 0xA4, 0xB0, 0xC8, 0xE0, 0xEc)\n");
-    printf
-        ("\nRates 2, 4, 11 and 22 (in units of 500 Kbps) must be present in either of basic or");
-    printf
-        ("\nnon-basic rates. If OFDM rates are enabled then 12, 24 and 48 (in units of 500 Kbps)");
-    printf("\nmust be present in either basic or non-basic rates");
-    printf("\nEach rate must be separated by a space.");
-    printf("\nrates followed by RATES for setting operational rates.");
-    printf
-        ("\nmbrate followed by RATE for setting multicast and broadcast rate.");
-    printf("\nurate followed by RATE for setting unicast rate.\n");
+        ("\nUsage : sys_cfg_rates_ext [rates RATES] [mbrate RATE] [urate RATE]\n"
+        "\nIf 'Rate' provided, a 'set' is performed else a 'get' is performed"
+        "\nRATES is provided as a set of data rates, in unit of 500 kilobits"
+        "\nA rate with MSB bit is basic rate, i.e 0x82 is basic rate.\n"
+        "\nFollowing is the list of supported rates in units of 500 Kbps:"
+        "\nDecimal: (2, 4, 11, 22, 12, 18, 24, 36, 48, 72, 96, 108)"
+        "\nHex: (0x02, 0x04, 0x0b, 0x16, 0x0C, 0x12, 0x18, 0x24, 0x30, 0x48, 0x60, 0x6c)"
+        "\nBasic rates: (0x82, 0x84, 0x8b, 0x96, 0x8C, 0x92, 0x98, 0xA4, 0xB0, 0xC8, 0xE0, 0xEc)\n"
+        "\nRates 2, 4, 11 and 22 (in units of 500 Kbps) must be present in either of basic or"
+        "\nnon-basic rates. If OFDM rates are enabled then 12, 24 and 48 (in units of 500 Kbps)"
+        "\nmust be present in either basic or non-basic rates"
+        "\nEach rate must be separated by a space."
+        "\nrates followed by RATES for setting operational rates."
+        "\nmbrate followed by RATE for setting multicast and broadcast rate."
+        "\nurate followed by RATE for setting unicast rate.\n");
     return;
 }
 
@@ -180,19 +167,15 @@ print_sys_cfg_rates_ext_usage(void)
 void
 print_sys_cfg_rates_usage(void)
 {
-    printf("\nUsage : sys_cfg_rates [RATES]\n");
-    printf
-        ("\n[RATES] is set of data rates in unit of 500 kbps and each rate can be");
-    printf
-        ("\nentered in hexadecimal or decimal format. Rates must be separated by");
-    printf("\nspace. Duplicate Rate  fields are not allowed");
-    printf("\nA rate with MSB bit is basic rate, i.e 0x82 is basic rate.");
-    printf("\nFollowing is the list of supported rates in units of 500 Kbps:");
-    printf("\nDecimal: (2, 4, 11, 22, 12, 18, 24, 36, 48, 72, 96, 108)");
-    printf
-        ("\nHex: (0x02, 0x04, 0x0b, 0x16, 0x0C, 0x12, 0x18, 0x24, 0x30, 0x48, 0x60, 0x6c)");
-    printf
-        ("\nBasic rates: (0x82, 0x84, 0x8b, 0x96, 0x8C, 0x92, 0x98, 0xA4, 0xB0, 0xC8, 0xE0, 0xEc)\n");
+    printf("\nUsage : sys_cfg_rates [RATES]\n"
+           "\n[RATES] is set of data rates in unit of 500 kbps and each rate can be"
+           "\nentered in hexadecimal or decimal format. Rates must be separated by"
+           "\nspace. Duplicate Rate  fields are not allowed"
+           "\nA rate with MSB bit is basic rate, i.e 0x82 is basic rate."
+           "\nFollowing is the list of supported rates in units of 500 Kbps:"
+           "\nDecimal: (2, 4, 11, 22, 12, 18, 24, 36, 48, 72, 96, 108)"
+           "\nHex: (0x02, 0x04, 0x0b, 0x16, 0x0C, 0x12, 0x18, 0x24, 0x30, 0x48, 0x60, 0x6c)"
+           "\nBasic rates: (0x82, 0x84, 0x8b, 0x96, 0x8C, 0x92, 0x98, 0xA4, 0xB0, 0xC8, 0xE0, 0xEc)\n");
     return;
 }
 
@@ -205,10 +188,9 @@ print_sys_cfg_rates_usage(void)
 void
 print_sys_cfg_tx_power_usage(void)
 {
-    printf("\nUsage : sys_cfg_tx_power [TX_POWER]\n");
-    printf
-        ("\nIf TX_POWER is provided, a 'set' is performed, else a 'get' is performed.");
-    printf("\nTX_POWER is represented in dBm.\n");
+    printf("\nUsage : sys_cfg_tx_power [TX_POWER]\n"
+           "\nIf TX_POWER is provided, a 'set' is performed, else a 'get' is performed."
+           "\nTX_POWER is represented in dBm.\n");
     return;
 }
 
@@ -221,10 +203,10 @@ print_sys_cfg_tx_power_usage(void)
 void
 print_sys_cfg_bcast_ssid_ctl_usage(void)
 {
-    printf("\nUsage : sys_cfg_bcast_ssid_ctl [0|1]\n");
-    printf("\nOptions: 0     - Disable SSID broadcast");
-    printf("\n         1     - Enable SSID broadcast");
-    printf("\n         empty - Get current SSID broadcast setting\n");
+    printf("\nUsage : sys_cfg_bcast_ssid_ctl [0|1]\n"
+           "\nOptions: 0     - Disable SSID broadcast"
+           "\n         1     - Enable SSID broadcast"
+           "\n         empty - Get current SSID broadcast setting\n");
     return;
 }
 
@@ -237,10 +219,10 @@ print_sys_cfg_bcast_ssid_ctl_usage(void)
 void
 print_sys_cfg_rsn_replay_prot_usage(void)
 {
-    printf("\nUsage : sys_cfg_rsn_replay_prot [0|1]\n");
-    printf("\nOptions: 0     - Disable RSN replay protection");
-    printf("\n         1     - Enable  RSN replay protection");
-    printf("\n         empty - Get current RSN replay protection setting\n");
+    printf("\nUsage : sys_cfg_rsn_replay_prot [0|1]\n"
+           "\nOptions: 0     - Disable RSN replay protection"
+           "\n         1     - Enable  RSN replay protection"
+           "\n         empty - Get current RSN replay protection setting\n");
     return;
 }
 
@@ -266,12 +248,12 @@ print_sys_cfg_preamble_ctl_usage(void)
 void
 print_sys_cfg_antenna_ctl_usage(void)
 {
-    printf("\nUsage : sys_cfg_antenna_ctl <ANTENNA> [MODE]\n");
-    printf("\nOptions: ANTENNA : 0 - Rx antenna");
-    printf("\n                   1 - Tx antenna");
-    printf("\n         MODE    : 0       - Antenna A");
-    printf("\n                   1       - Antenna B");
-    printf("\n                   empty   - Get current antenna settings\n");
+    printf("\nUsage : sys_cfg_antenna_ctl <ANTENNA> [MODE]\n"
+           "\nOptions: ANTENNA : 0       - Rx antenna"
+           "\n                   1       - Tx antenna"
+           "\n         MODE    : 0       - Antenna A"
+           "\n                   1       - Antenna B"
+           "\n                   empty   - Get current antenna settings\n");
     return;
 }
 
@@ -284,9 +266,8 @@ print_sys_cfg_antenna_ctl_usage(void)
 void
 print_sys_cfg_rts_threshold_usage(void)
 {
-    printf("\nUsage : sys_cfg_rts_threshold [RTS_THRESHOLD]\n");
-    printf
-        ("\nIf RTS_THRESHOLD is provided, a 'set' is performed, else a 'get' is performed.\n");
+    printf("\nUsage : sys_cfg_rts_threshold [RTS_THRESHOLD]\n"
+           "\nIf RTS_THRESHOLD is provided, a 'set' is performed, else a 'get' is performed.\n");
     return;
 }
 
@@ -299,10 +280,9 @@ print_sys_cfg_rts_threshold_usage(void)
 void
 print_sys_cfg_frag_threshold_usage(void)
 {
-    printf("\nUsage : sys_cfg_frag_threshold [FRAG_THRESHOLD]\n");
-    printf
-        ("\nIf FRAG_THRESHOLD is provided, a 'set' is performed, else a 'get' is performed.");
-    printf("\nFragment threshold should between 256 and 2346.\n");
+    printf("\nUsage : sys_cfg_frag_threshold [FRAG_THRESHOLD]\n"
+           "\nIf FRAG_THRESHOLD is provided, a 'set' is performed, else a 'get' is performed."
+           "\nFragment threshold should between 256 and 2346.\n");
     return;
 }
 
@@ -315,10 +295,10 @@ print_sys_cfg_frag_threshold_usage(void)
 void
 print_sys_cfg_radio_ctl_usage(void)
 {
-    printf("\nUsage : sys_cfg_radio_ctl [0|1]\n");
-    printf("\nOptions: 0     - Turn radio on");
-    printf("\n         1     - Turn radio off");
-    printf("\n         empty - Get current radio setting\n");
+    printf("\nUsage : sys_cfg_radio_ctl [0|1]\n"
+           "\nOptions: 0     - Turn radio on"
+           "\n         1     - Turn radio off"
+           "\n         empty - Get current radio setting\n");
     return;
 }
 
@@ -331,15 +311,14 @@ print_sys_cfg_radio_ctl_usage(void)
 void
 print_sys_cfg_tx_data_rates_usage(void)
 {
-    printf("\nUsage : sys_cfg_tx_data_rate [TX_DATA_RATE]\n");
-    printf("\nOptions: 0     - Auto rate");
-    printf("\n         >0    - Set specified data rate");
-    printf("\n         empty - Get current data rate");
-    printf("\nFollowing is the list of supported rates in units of 500 Kbps");
-    printf("\nDecimal: (2, 4, 11, 22, 12, 18, 24, 36, 48, 72, 96, 108)");
-    printf
-        ("\nHex: (0x02, 0x04, 0x0b, 0x16, 0x0C, 0x12, 0x18, 0x24, 0x30, 0x48, 0x60, 0x6c)");
-    printf("\nOnly zero or rates currently configured are allowed.\n");
+    printf("\nUsage : sys_cfg_tx_data_rate [TX_DATA_RATE]\n"
+           "\nOptions: 0     - Auto rate"
+           "\n         >0    - Set specified data rate"
+           "\n         empty - Get current data rate"
+           "\nFollowing is the list of supported rates in units of 500 Kbps"
+           "\nDecimal: (2, 4, 11, 22, 12, 18, 24, 36, 48, 72, 96, 108)"
+           "\nHex: (0x02, 0x04, 0x0b, 0x16, 0x0C, 0x12, 0x18, 0x24, 0x30, 0x48, 0x60, 0x6c)"
+           "\nOnly zero or rates currently configured are allowed.\n");
     return;
 }
 
@@ -352,16 +331,14 @@ print_sys_cfg_tx_data_rates_usage(void)
 void
 print_sys_cfg_mcbc_data_rates_usage(void)
 {
-    printf("\nUsage : sys_cfg_mcbc_data_rate [MCBC_DATA_RATE]\n");
-    printf("\nOptions: 0     - Auto rate");
-    printf("\n         >0    - Set specified MCBC data rate");
-    printf("\n         empty - Get current MCBC data rate");
-    printf("\nFollowing is the list of supported rates in units of 500 Kbps");
-    printf("\nDecimal: (2, 4, 11, 22, 12, 18, 24, 36, 48, 72, 96, 108)");
-    printf
-        ("\nHex: (0x02, 0x04, 0x0b, 0x16, 0x0C, 0x12, 0x18, 0x24, 0x30, 0x48, 0x60, 0x6c)");
-    printf
-        ("\nOnly zero or one of the basic rates currently configured are allowed.\n");
+    printf("\nUsage : sys_cfg_mcbc_data_rate [MCBC_DATA_RATE]\n"
+           "\nOptions: 0     - Auto rate"
+           "\n         >0    - Set specified MCBC data rate"
+           "\n         empty - Get current MCBC data rate"
+           "\nFollowing is the list of supported rates in units of 500 Kbps"
+           "\nDecimal: (2, 4, 11, 22, 12, 18, 24, 36, 48, 72, 96, 108)"
+           "\nHex: (0x02, 0x04, 0x0b, 0x16, 0x0C, 0x12, 0x18, 0x24, 0x30, 0x48, 0x60, 0x6c)"
+           "\nOnly zero or one of the basic rates currently configured are allowed.\n");
     return;
 }
 
@@ -373,10 +350,10 @@ print_sys_cfg_mcbc_data_rates_usage(void)
 void
 print_sys_cfg_auth_usage(void)
 {
-    printf("\nUsage : sys_cfg_auth [AUTHMODE]\n");
-    printf("\nOptions: AUTHMODE :     0 - Open authentication");
-    printf("\n                        1 - Shared key authentication");
-    printf("\n         empty - Get current authenticaton mode\n");
+    printf("\nUsage : sys_cfg_auth [AUTHMODE]\n"
+           "\nOptions: AUTHMODE :     0 - Open authentication"
+           "\n                        1 - Shared key authentication"
+           "\n         empty - Get current authenticaton mode\n");
     return;
 }
 
@@ -388,10 +365,10 @@ print_sys_cfg_auth_usage(void)
 void
 print_sys_cfg_pkt_fwd_ctl_usage(void)
 {
-    printf("\nUsage : sys_cfg_pkt_fwd_ctl [0|1]\n");
-    printf("\nOptions: 0     - Forward all packets to the host");
-    printf("\n         1     - Firmware handles intra-BSS packets");
-    printf("\n         empty - Get current packet forwarding setting\n");
+    printf("\nUsage : sys_cfg_pkt_fwd_ctl [0|1]\n"
+           "\nOptions: 0     - Forward all packets to the host"
+           "\n         1     - Firmware handles intra-BSS packets"
+           "\n         empty - Get current packet forwarding setting\n");
     return;
 }
 
@@ -404,12 +381,11 @@ print_sys_cfg_pkt_fwd_ctl_usage(void)
 void
 print_sys_cfg_sta_ageout_timer_usage(void)
 {
-    printf("\nUsage : sys_cfg_sta_ageout_timer [STA_AGEOUT_TIMER]\n");
-    printf
-        ("\nIf STA_AGEOUT_TIMER is provided, a 'set' is performed, else a 'get' is performed.");
-    printf("\nSTA_AGEOUT_TIMER is represented in units of 100 ms.");
-    printf("\nValue of 0 will mean that stations will never be aged out.");
-    printf("\nThe value should between 300 and 864000.\n");
+    printf("\nUsage : sys_cfg_sta_ageout_timer [STA_AGEOUT_TIMER]\n"
+           "\nIf STA_AGEOUT_TIMER is provided, a 'set' is performed, else a 'get' is performed."
+           "\nSTA_AGEOUT_TIMER is represented in units of 100 ms."
+           "\nValue of 0 will mean that stations will never be aged out."
+           "\nThe value should between 300 and 864000.\n");
     return;
 }
 
@@ -421,13 +397,13 @@ print_sys_cfg_sta_ageout_timer_usage(void)
 void
 print_sys_cfg_protocol_usage(void)
 {
-    printf("\nUsage : sys_cfg_protocol [PROTOCOL]\n");
-    printf("\nOptions: PROTOCOL:		1 - No RSN");
-    printf("\n				2 - WEP Static");
-    printf("\n				8 - WPA");
-    printf("\n				32 - WPA2");
-    printf("\n				40 - WPA2 Mixed");
-    printf("\n				empty - Get current protocol\n");
+    printf("\nUsage : sys_cfg_protocol [PROTOCOL]\n"
+           "\nOptions: PROTOCOL:		1 - No RSN"
+           "\n				2 - WEP Static"
+           "\n				8 - WPA"
+           "\n				32 - WPA2"
+           "\n				40 - WPA2 Mixed"
+           "\n				empty - Get current protocol\n");
     return;
 }
 
@@ -440,23 +416,21 @@ print_sys_cfg_protocol_usage(void)
 void
 print_sys_cfg_wep_key_usage(void)
 {
-    printf("\nUsage : sys_cfg_wep_key ");
-    printf
-        ("[INDEX_0 IS_DEFAULT KEY_0] [INDEX_1 IS_DEFAULT KEY_1] [INDEX_2 IS_DEFAULT KEY_2] [INDEX_3 IS_DEFAULT KEY_3]\n");
-    printf("[Index_0] [Index_1] [Index_2] [Index_3]\n");
-    printf("\nOptions: INDEX_* :      0 - KeyIndex is 0");
-    printf("\n                        1 - KeyIndex is 1");
-    printf("\n                        2 - KeyIndex is 2");
-    printf("\n                        3 - KeyIndex is 3");
-    printf("\n         IS_DEFAULT :   0 - KeyIndex is not the default");
-    printf
-        ("\n                        1 - KeyIndex is the default transmit key");
-    printf("\n         KEY_* :        Key value");
-    printf("\n         Index_*:       0 - Get key 0 setting");
-    printf("\n                        1 - Get key 1 setting");
-    printf("\n                        2 - Get key 2 setting");
-    printf("\n                        3 - Get key 3 setting");
-    printf("\n         empty - Get current WEP key settings\n");
+    printf("\nUsage : sys_cfg_wep_key "
+           "[INDEX_0 IS_DEFAULT KEY_0] [INDEX_1 IS_DEFAULT KEY_1] [INDEX_2 IS_DEFAULT KEY_2] [INDEX_3 IS_DEFAULT KEY_3]\n"
+           "[Index_0] [Index_1] [Index_2] [Index_3]\n"
+           "\nOptions: INDEX_* :      0 - KeyIndex is 0"
+           "\n                        1 - KeyIndex is 1"
+           "\n                        2 - KeyIndex is 2"
+           "\n                        3 - KeyIndex is 3"
+           "\n         IS_DEFAULT :   0 - KeyIndex is not the default"
+           "\n                        1 - KeyIndex is the default transmit key"
+           "\n         KEY_* :        Key value"
+           "\n         Index_*:       0 - Get key 0 setting"
+           "\n                        1 - Get key 1 setting"
+           "\n                        2 - Get key 2 setting"
+           "\n                        3 - Get key 3 setting"
+           "\n         empty - Get current WEP key settings\n");
     return;
 }
 
@@ -469,23 +443,22 @@ print_sys_cfg_wep_key_usage(void)
 void
 print_sys_cfg_custom_ie_usage(void)
 {
-    printf("\nUsage : sys_cfg_custom_ie [INDEX] [MASK] [IEBuffer]");
-    printf("\n         empty - Get all IE settings\n");
-    printf("\n         INDEX:  0 - Get/Set IE index 0 setting");
-    printf("\n                 1 - Get/Set IE index 1 setting");
-    printf("\n                 2 - Get/Set IE index 2 setting");
-    printf("\n                 3 - Get/Set IE index 3 setting");
-    printf
-        ("\n         MASK :  Management subtype mask value as per bit defintions");
-    printf("\n              :  Bit 0 - Association request.");
-    printf("\n              :  Bit 1 - Association response.");
-    printf("\n              :  Bit 2 - Reassociation request.");
-    printf("\n              :  Bit 3 - Reassociation response.");
-    printf("\n              :  Bit 4 - Probe request.");
-    printf("\n              :  Bit 5 - Probe response.");
-    printf("\n              :  Bit 8 - Beacon.");
-    printf("\n         MASK :  MASK = 0 to clear the mask and the IE buffer");
-    printf("\n         IEBuffer :  IE Buffer in hex (max 256 bytes)\n\n");
+    printf("\nUsage : sys_cfg_custom_ie [INDEX] [MASK] [IEBuffer]"
+           "\n         empty - Get all IE settings\n"
+           "\n         INDEX:  0 - Get/Set IE index 0 setting"
+           "\n                 1 - Get/Set IE index 1 setting"
+           "\n                 2 - Get/Set IE index 2 setting"
+           "\n                 3 - Get/Set IE index 3 setting"
+           "\n         MASK :  Management subtype mask value as per bit defintions"
+           "\n              :  Bit 0 - Association request."
+           "\n              :  Bit 1 - Association response."
+           "\n              :  Bit 2 - Reassociation request."
+           "\n              :  Bit 3 - Reassociation response."
+           "\n              :  Bit 4 - Probe request."
+           "\n              :  Bit 5 - Probe response."
+           "\n              :  Bit 8 - Beacon."
+           "\n         MASK :  MASK = 0 to clear the mask and the IE buffer"
+           "\n         IEBuffer :  IE Buffer in hex (max 256 bytes)\n\n");
     return;
 }
 
@@ -494,15 +467,15 @@ print_sys_cfg_custom_ie_usage(void)
 void
 print_sys_cfg_cipher_usage(void)
 {
-    printf("\nUsage : sys_cfg_cipher [PAIRWISE_CIPHER GROUP_CIPHER]\n");
-    printf("\nOptions: PAIRWISE_CIPHER:  0 - NONE");
-    printf("\n                           4 - TKIP");
-    printf("\n                           8 - AES CCMP");
-    printf("\n                           12 - AES CCMP + TKIP");
-    printf("\n         GROUP_CIPHER :    0 - NONE");
-    printf("\n                           4 - TKIP");
-    printf("\n                           8 - AES CCMP");
-    printf("\n         empty - Get current cipher settings\n");
+    printf("\nUsage : sys_cfg_cipher [PAIRWISE_CIPHER GROUP_CIPHER]\n"
+           "\nOptions: PAIRWISE_CIPHER:  0 - NONE"
+           "\n                           4 - TKIP"
+           "\n                           8 - AES CCMP"
+           "\n                           12 - AES CCMP + TKIP"
+           "\n         GROUP_CIPHER :    0 - NONE"
+           "\n                           4 - TKIP"
+           "\n                           8 - AES CCMP"
+           "\n         empty - Get current cipher settings\n");
     return;
 }
 
@@ -514,9 +487,9 @@ print_sys_cfg_cipher_usage(void)
 void
 print_sys_cfg_group_rekey_timer_usage(void)
 {
-    printf("\nUsage : sys_cfg_group_rekey_timer [GROUP_REKEY_TIMER]\n");
-    printf("\nOptions: GROUP_REKEY_TIME is represented in seconds");
-    printf("\n         empty - Get current group re-key time\n");
+    printf("\nUsage : sys_cfg_group_rekey_timer [GROUP_REKEY_TIMER]\n"
+           "\nOptions: GROUP_REKEY_TIME is represented in seconds"
+           "\n         empty - Get current group re-key time\n");
     return;
 }
 
@@ -529,9 +502,8 @@ print_sys_cfg_group_rekey_timer_usage(void)
 void
 print_sys_cfg_wpa_passphrase_usage(void)
 {
-    printf("\nUsage : sys_cfg_wpa_passphrase [PASSPHRASE]\n");
-    printf
-        ("\nIf PASSPHRASE is provided, a 'set' is performed, else a 'get' is performed.\n");
+    printf("\nUsage : sys_cfg_wpa_passphrase [PASSPHRASE]\n"
+           "\nIf PASSPHRASE is provided, a 'set' is performed, else a 'get' is performed.\n");
     return;
 }
 
@@ -543,18 +515,14 @@ print_sys_cfg_wpa_passphrase_usage(void)
 void
 print_sta_filter_table_usage(void)
 {
-    printf("\nUsage : sta_filter_table <FILTERMODE> <MACADDRESS_LIST>\n");
-    printf("\nOptions: FILTERMODE : 0 - Disable filter table");
-    printf
-        ("\n                      1 - allow MAC addresses specified in the allowed list");
-    printf
-        ("\n                      2 - block MAC addresses specified in the banned list");
-    printf
-        ("\n         MACADDRESS_LIST is the list of MAC addresses to be acted upon. Each");
-    printf
-        ("\n                      MAC address must be separated with a space. Maximum of");
-    printf("\n                      16 MAC addresses are supported.");
-    printf("\n         empty - Get current mac filter settings\n");
+    printf("\nUsage : sta_filter_table <FILTERMODE> <MACADDRESS_LIST>\n"
+           "\nOptions: FILTERMODE : 0 - Disable filter table"
+           "\n                      1 - allow MAC addresses specified in the allowed list"
+           "\n                      2 - block MAC addresses specified in the banned list"
+           "\n         MACADDRESS_LIST is the list of MAC addresses to be acted upon. Each"
+           "\n                      MAC address must be separated with a space. Maximum of"
+           "\n                      16 MAC addresses are supported."
+           "\n         empty - Get current mac filter settings\n");
     return;
 }
 
@@ -566,10 +534,9 @@ print_sta_filter_table_usage(void)
 void
 print_sys_cfg_max_sta_num_usage(void)
 {
-    printf("\nUsage : sys_cfg_max_sta_num [STA_NUM]\n");
-    printf
-        ("\nIf STA_NUM is provided, a 'set' is performed, else a 'get' is performed.");
-    printf("\nSTA_NUM should not bigger than 8.\n");
+    printf("\nUsage : sys_cfg_max_sta_num [STA_NUM]\n"
+           "\nIf STA_NUM is provided, a 'set' is performed, else a 'get' is performed."
+           "\nSTA_NUM should not bigger than 8.\n");
     return;
 }
 
@@ -581,10 +548,9 @@ print_sys_cfg_max_sta_num_usage(void)
 void
 print_sys_cfg_retry_limit_usage(void)
 {
-    printf("\nUsage : sys_cfg_retry_limit [RETRY_LIMIT]\n");
-    printf
-        ("\nIf RETRY_LIMIT is provided, a 'set' is performed, else a 'get' is performed.");
-    printf("\nRETRY_LIMIT should not bigger than 14.\n");
+    printf("\nUsage : sys_cfg_retry_limit [RETRY_LIMIT]\n"
+           "\nIf RETRY_LIMIT is provided, a 'set' is performed, else a 'get' is performed."
+           "\nRETRY_LIMIT should not bigger than 14.\n");
     return;
 }
 
@@ -596,10 +562,10 @@ print_sys_cfg_retry_limit_usage(void)
 void
 print_cfg_data_usage(void)
 {
-    printf("\nUsage : cfg_data <type> [*.conf]\n");
-    printf("\n        type : 2 -- cal data");
-    printf("\n        *.conf : file contain configuration data");
-    printf("\n                 empty - get current configuration data\n");
+    printf("\nUsage : cfg_data <type> [*.conf]\n"
+           "\n        type : 2 -- cal data"
+           "\n        *.conf : file contain configuration data"
+           "\n                 empty - get current configuration data\n");
     return;
 }
 
